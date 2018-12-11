@@ -14,11 +14,60 @@
 */
 
 /* Table Styles */
+/* This affects the table with the id of pricing and sets the background to a linear gradient and adds a 5px border */
+table#pricing {
+    background-image: linear-gradient(rgb(190, 215, 255), black);
+    border: 5px solid grey;
+}
 
+/* This affects the th and td elements in a table and adds a border to them, also sets the line height to 1.4em and gives it 8px of padding. */
+table th,
+table td {
+    border: 3px solid grey;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+/* This affects the table heading elments and sets the background to black and also sets the text color to an rgb value, plus sets the font-weight to normal. */
+th {
+    background: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+/* This affects the table data elments and also sets the color to be white, font size to 0.9em and aligns the cells vertically to the top. */
+td {
+    color: white;
+    font-size: 0.9em;
+    vertical-align: top;
+}
 
 
 /* Column Styles */
+/* this affects the col elemnent with the id of firstCol and sets the width */
+col#firstCol {
+    width: 24%;
+}
 
+/* This affects the col element with the class of dataCols and sets the width. */
+col.dataCols {
+    width: 19%;
+}
 
 
 /* Table Header Styles */
+/* This affects the table rows in the the table head group element and sets the height to 60 pixels */
+thead tr {
+    height: 60px;
+}
+
+/* This affects the first table headings in the first table row thats in the table head. Makes the font size 2 ems. */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
+
+/* This affects the table heading that are not first in the first row thats in the table head and sets the background to be transparent and the color to black. */
+thead tr:first-of-type th:not(:first-of-type) {
+    background: transparent;
+    color: black;
+}
